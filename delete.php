@@ -4,7 +4,7 @@ include "db.php";
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
-    // Get picture name first
+
     $result = $conn->query("SELECT profile_picture FROM registration WHERE id=$id");
     $row = $result->fetch_assoc();
 
